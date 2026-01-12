@@ -1,0 +1,34 @@
+{
+  "app": {
+    "title": "Object Finder",
+    "typeLabel": "Search type",
+    "objectFilter": "Filter list…",
+    "objectSelect": "Select…",
+    "textValue": "Value to search…",
+    "search": "Search",
+    "loading": "Loading…",
+    "scanning": "Scanning…",
+    "noResults": "No matches found.",
+    "types": {
+      "user": "User",
+      "device": "Device",
+      "vmbox": "Voicemail Box",
+      "callflow": "Callflow",
+      "email": "Email Address",
+      "number": "Phone Number"
+    },
+    "tables": {
+      "users": "Users",
+      "devices": "Devices",
+      "vmboxes": "Voicemail Boxes",
+      "callflows": "Callflows",
+      "groups": "Groups",
+      "directories": "Directories"
+    },
+    "cols": {
+      "name": "Name",
+      "id": "ID",
+      "matches": "Matches"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{{#if hasAny}}
+{{#each tables}}
+{{#if rows.length}}
+<div class="of-table-wrap">
+    <h3>{{title}}</h3>
+
+    <table class="table of-table {{#if showFound}}of-has-found{{else}}of-no-found{{/if}}">
+        {{#if showFound}}
+        <colgroup>
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:50%">
+        </colgroup>
+        {{else}}
+        <colgroup>
+            <col style="width:50%">
+            <col style="width:50%">
+        </colgroup>
+        {{/if}}
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                {{#if showFound}}<th>Found</th>{{/if}}
+                <th>Used as / Where</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each rows}}
+            {{#each occurrences}}
+            {{#if isFirst}}
+            <tr class="of-gap">
+                <td colspan="{{../../colSpan}}"></td>
+            </tr>
+            {{/if}}
+
+            <tr class="of-occ {{#if isFirst}}of-occ-first{{else}}of-occ-next{{/if}}">
+                {{#if isFirst}}
+                <td class="of-col-name" rowspan="{{../rowSpan}}">{{../name}}</td>
+                {{/if}}
+
+                {{#if ../../showFound}}
+                <td class="of-col-found">{{found}}</td>
+                {{/if}}
+
+                <td class="of-col-where">{{where}}</td>
+            </tr>
+            {{/each}}
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+{{/if}}
+{{/each}}
+{{else}}
+<div class="of-muted">No matches found.</div>
+{{/if}}

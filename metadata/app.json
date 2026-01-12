@@ -1,0 +1,12 @@
+{
+  "name": "objectFinder",
+  "label": "Object Finder",
+  "description": "Search objects/text and display where they are referenced",
+  "tags": [
+    "admin"
+  ],
+  "icon": "object-finder.png",
+  "screenshots": [
+    "object-finder.png"
+  ]
+}

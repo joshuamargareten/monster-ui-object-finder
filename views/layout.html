@@ -1,0 +1,44 @@
+<div class="object-finder">
+  <div class="of-controls">
+    <div class="of-block">
+      <label for="of-type">{{i18n.app.typeLabel}}</label>
+      <select id="of-type" class="input-medium">
+        <optgroup label="Objects">
+          <option value="user">User</option>
+          <option value="userAffiliations">User + Affiliations</option>
+          <option value="device">Device</option>
+          <option value="vmbox">Voicemail Box</option>
+          <option value="callflow">Callflow</option>
+          <option value="group">Group</option>
+          <option value="faxbox">Faxbox</option>
+          <option value="directory">Directory</option>
+        </optgroup>
+        <optgroup label="Text">
+          <option value="email">Email Address</option>
+          <option value="number">Phone Number</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="of-block of-grow" id="of-object-block">
+      <label class="of-sr-only" for="of-object-select">Object</label>
+      <div class="of-object-row">
+        <select id="of-object-select" class="input-medium"></select>
+      </div>
+    </div>
+
+    <div class="of-block of-grow" id="of-text-block" style="display:none;">
+      <label for="of-text">{{i18n.app.textValue}}</label>
+      <input id="of-text" class="input-medium" placeholder="{{i18n.app.textValue}}">
+    </div>
+
+    <div class="of-block of-actions">
+      <button id="of-search" class="monster-button monster-button-primary" disabled>
+        {{i18n.app.search}}
+      </button>
+    </div>
+  </div>
+
+  <div class="of-progress" id="of-progress"></div>
+  <div id="of-results"></div>
+</div>
