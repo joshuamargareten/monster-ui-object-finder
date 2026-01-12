@@ -55,6 +55,11 @@
   line-height: 40px;
 }
 
+.object-finder .chosen-container .chosen-drop {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
 /* Button */
 .object-finder #of-search {
   width: 100%;
