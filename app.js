@@ -4,7 +4,7 @@ define(function (require) {
     _ = require('lodash');
 
   var app = {
-    name: 'objectFinder',
+    name: 'object-finder',
     css: ['app'],
     i18n: { 'en-US': { customCss: false } },
 
