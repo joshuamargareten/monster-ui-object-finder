@@ -1,12 +1,19 @@
 {
-  "name": "objectFinder",
-  "label": "Object Finder",
-  "description": "Search objects/text and display where they are referenced",
-  "tags": [
-    "admin"
-  ],
-  "icon": "object-finder.png",
-  "screenshots": [
-    "object-finder.png"
-  ]
+    "name": "object-finder",
+    "api_url": "https://portal.theteklink.com:8443/v2/",
+    "i18n": {
+        "en-US": {
+            "label": "Object Finder",
+            "description": "Search objects/text and display where they are referenced",
+            "extended_description": "Search objects/text and display where they are referenced"
+        }
+    },
+    "tags": ["admin"],
+    "icon": "object-finder.png",
+    "author": "Shulem Margareten",
+    "version": "1.0",
+    "license": "-",
+    "price": 0,
+    "screenshots": ["object-finder.png"],
+	  "pvt_type": "app"
 }
